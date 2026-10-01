@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.tela {
+    display: flex;
+    height: 100vh;
+}
+
+.esquerda {
+    width: 50%;
+    background-color: #f9bbff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda h1 {
+    font-size: 40px;
+}
+
+.esquerda p {
+    font-size: 18px;
+}
+
+.login {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.login h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+a {
+    color: #f9bbff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f9bbff;
+}
+
+.cadastro {
+    text-align: center;
+    margin-top: 25px;
+}
+</style>
+
+<body>
+     <div class="tela">
+
+        <div class="esquerda">
+            <h1>Bem-vindo!</h1>
+            <p>Entre na sua conta para continuar.</p>
+        </div>
+
+        <div class="login">
+
+            <h2>Login</h2>
+
+            <form>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+
+                <a href="#">Esqueceu sua senha?</a>
+
+                <button type="submit">Entrar</button>
+
+            </form>
+
+            <p class="cadastro">
+                Não possui uma conta?
+                <a href="#">Cadastre-se</a>
+            </p>
+
+        </div>
+
+    </div>
+</body>
+</html>
